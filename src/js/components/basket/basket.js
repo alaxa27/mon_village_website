@@ -41,7 +41,7 @@ let Basket = React.createClass({
         <li key={n} className="pure-g">
           <div className="pure-u-1-2">
             <span className="appBasket-itemDetails">
-              {item.name} : £{item.price}.00
+              {item.name} : {item.price}€
             </span>
             <span className="appBasket-qty">x {item.qty}</span>
             </div>
@@ -55,10 +55,10 @@ let Basket = React.createClass({
     return (
       <div className={"appBasket pure-u-3-5 pure-u-md-3-5 pure-u-lg-2-5 " + statusClassName}>
         <div className="pure-g">
-          <div className="appBasket-label pure-u-1-2">Basket</div>
+          <div className="appBasket-label pure-u-1-2">Panier</div>
           <div className="pure-u-1-2">
             <span className="appBasket-nrItems"> x {this.state.qty}</span>
-            <span className="appBasket-total">£{this.state.total}.00</span>
+            <span className="appBasket-total">{this.state.total} €</span>
           </div>
         </div>
         <ul className="basketList list-reset">{list}</ul>

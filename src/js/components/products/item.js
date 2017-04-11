@@ -39,7 +39,7 @@ let Item = React.createClass({
   },
 
   getBasketControls() {
-    let controls = <AddToBasket text="Add to basket" item={this.props.item} />;
+    let controls = <AddToBasket text="Ajouter au panier" item={this.props.item} />;
     if (this.state.inBasket) {
       controls = (<div><AddToBasket text="+" item={this.props.item} /> <RemoveFromBasket item={this.props.item} /></div>);
     }
@@ -66,7 +66,7 @@ let Item = React.createClass({
           <h4 className="appItem-title truncate">{this.props.item.name}</h4>
 
           <img className={'img-responsive appItem-img'} src={this.props.item.image} alt="" />
-          <div className="appItem-price">£ {this.props.item.price}.00</div>
+          <div className="appItem-price">{this.props.item.price} €</div>
           <div className="appItem-qty">x { this.props.item.qty }</div>
           <div className="basketControls">
             {this.getBasketControls()}

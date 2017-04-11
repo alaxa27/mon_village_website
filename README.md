@@ -1,10 +1,8 @@
-# react-reflux-super-fantastic-shop-demo
+# Mon Village
 
-## Please take note, this repo is no longer actively maintained since it was sample code written whilst learning React & Reflux in March 2015.
 
 ---
 
-A super fantastic demo shop making use of the incredible powers provided by:
 - [react](http://facebook.github.io/react/)
 - [reflux](https://www.npmjs.com/package/reflux)
 - [react router](https://github.com/rackt/react-router)

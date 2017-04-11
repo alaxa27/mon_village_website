@@ -12,7 +12,7 @@ require('./page.css');
 let pages = {
   pagefood : {
     pageClasses : 'page page--food',
-    heading : 'Food'
+    heading : 'Nos Produits'
   },
   pagefashion : {
     pageClasses : 'page page--fashion',
